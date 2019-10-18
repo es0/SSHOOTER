@@ -145,7 +145,7 @@ def check_hosts():
         for host, result in execute(run_command, "uptime", hosts=env.hosts).iteritems():
             if result and result != "Error":
                 running_hosts[host] = result
-                nix_hosts[host] = result
+                # nix_hosts[host] = result
             elif result == "Error":
                 print "[+] Hmmm. " + str(host) + " must be a Windows host.. "
                 print "[+] checking 4 signs of life."
@@ -153,7 +153,7 @@ def check_hosts():
                 result = execute(run_command, win_uptime, hosts=host)
                 if result and result != "Error":
                     running_hosts[host] = result
-		    windows_hosts[host] = result
+		            # windows_hosts[host] = result
             else:
                 dead_hosts[host] = "No Connection"
     except:
