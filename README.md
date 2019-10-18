@@ -3,8 +3,9 @@ SSH remote administration script written in Python using Fabric.
 
 # Features:
   - Connect to ssh using `data\creds\creds.txt` file
-  - Upload/Download files from remote host
-  - Open command shell on remote host
+  - Upload/Download files from remote host(s)
+  - Open command shell on remote host(s)
+  - Execute command on remote host(s)
 
 
 # Example creds.txt
