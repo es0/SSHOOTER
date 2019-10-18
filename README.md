@@ -1,8 +1,8 @@
 # SSHOOTER
-SSH remote administration tool written in Python using Fabric.
+SSH remote administration script written in Python using Fabric.
 
 # Features:
-  - Connect to ssh using creds.txt file
+  - Connect to ssh using `data\creds\creds.txt` file
   - Upload/Download files from remote host
   - Open command shell on remote host
 
